@@ -1,0 +1,506 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Crete+Round:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Petit+Formal+Script);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400);
+
+@import "compass/css3";
+
+@font-face {font-family: "Helvetica Neue"; src: url('../fonts/HelveticaNeue.ttf') format('truetype');}
+@font-face {font-family: "Helvetica"; src: url('../fonts/Helvetica.ttf') format('truetype');}
+
+
+body {
+	background-color: #ececec;
+}
+
+.rectangle-523-copy-2 {
+	width: 100%;
+	height: 50%;
+	background-color: #ececec;
+}
+
+#header-fixed {
+	overflow: visible!important;
+	opacity: 1;
+	position: relative;
+	width: 100%;    
+	z-index: 99999;
+}
+
+.header-light {
+    height: 100%;
+    background-color: #FFFFFF;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+
+.rectangle-523 {
+	width: 100%;
+	height: 1232px;
+	background-color: #ececec;
+}
+
+.background {
+	background-color: #ececec;
+}
+
+.rectangle-62 {
+	width: 100%;
+	height: 18%;
+	opacity: 0.41;
+	/*background-color: #000000;*/
+	background-image:url(../images/nos-ofres-cover.png);
+	text-align: center;
+}
+
+.quelque-soit-votre-b {
+	width: 38%;
+	height: 40%;
+	font-family: 'Helvetica Neue', Helvetica-Neue, HelveticaNeue, Arial, sans-serif;
+	font-size: 288%;
+	font-weight: 100;
+	letter-spacing: 5%;
+	text-align: center;
+	color: #ffffff;
+}
+
+.covevr-headline {
+	text-align: center;
+	margin-left: 20%;
+	width: 100%;
+	padding-top: 3%;
+}
+
+.logo {
+	width: 90%;
+	height: 128%;
+}
+
+.logo-head { 
+	width: 66px;
+	height: 60px;
+	margin-left: 40px;
+}
+
+.rectangle-7 {
+	width: 16%;
+	height: 60%;
+	background-color: #ffffff;
+	box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0);
+	border: solid 1px #e5e5e5;
+	position: absolute;
+    top: 140px;
+    right: 35px;
+    margin-right: 11%;
+    border: 1px;
+    text-align: center;
+
+}
+
+.mask {
+	width: 100%;
+	height: 36.7%;
+	background-color: #d8d8d8;
+}
+
+.bitmap {
+	width: 100%;
+	height: 36.7%;
+}
+
+.v-o-i-r-p-l-u-s {
+	width: 75px;
+	height: 17px;
+	font-family: Helvetica;
+	font-size: 14px;
+	color: #c5281c;
+	/*color: var(--rusty-red);*/
+	margin-top: 1%;
+
+}
+
+form img {
+	width: 100%;
+	height: 30%;
+}
+
+form {
+	font-family: Helvetica;
+	font-size: 85%;
+
+}
+
+.chat {
+	display: inline;
+}
+
+
+div.chat a {
+    /*background:url(../images/live_chat.png) no-repeat;*/
+    cursor:pointer;
+    width: 30%;
+    height: 22%;
+    border: none;
+    padding-bottom: 7%;
+}
+
+#phonIcon {
+	background:url(../images/phone.png) no-repeat;
+    cursor:pointer;
+    width: 30%;
+    height: 22%;
+    border: none;
+    padding-bottom: 7%;
+    padding-right: 1%;
+}
+
+div.chat img {
+	width: 10%;
+	height: 10%;
+	padding-right: 30%;
+
+}
+
+.contactez-lagence-s {
+	width: 60%;
+	height: 10%;
+	font-family: Helvetica;
+	font-size: 100%;
+	font-weight: 500;
+	line-height: 1.1;
+	text-align: center;
+	color: #c5281c;
+	margin-left: 20%;
+	margin-bottom: 5%;
+	padding-bottom: 10%;
+}
+
+.chatter {
+	width: 50%;
+	height: 14%;
+	font-family: Helvetica;
+	font-size: 87%;
+	color: #3e3e3e;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+}
+
+.04-92-15-51-10 {
+	width: 50%;
+	height: 17%;
+	font-family: Helvetica;
+	font-size: 80%;
+	color: #3e3e3e;
+	text-align: center;
+}
+
+.v-o-i-r-p-l-u-s {
+	width: 80%;
+	height: 60%;
+	font-family: Helvetica;
+	font-size: 90%;
+	padding: 10%;
+	color: #c5281c;
+	/*color: var(--rusty-red);*/
+}
+
+
+.back-to-top {
+	background-image: url(../images/back_to_top.png);
+	margin: 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 70px;
+	height: 70px;
+	z-index: 100;
+	display: none;
+	text-decoration: none;
+	color: #ffffff;
+	/*background-color: #ff9000;*/
+}
+ 
+ .line-copy-3 {
+	width: 100%;
+	border: solid 1px #e1e1e1;
+}
+ 
+
+.s-e-g-u-i-p-a-o-l-i-o-f-f-r-e-s {
+	width: 70%;
+	height: 30%;
+	font-family: Helvetica;
+	font-size: 100%;
+	color: #3e3e3e;
+	margin-left: 15%;
+	padding-top: 3%;
+	position: absolute;
+	margin-top: 4%;
+
+}
+
+
+.rectangle-525 {
+	width: 49%;
+	height: 14%;
+	background-color: #ffffff;
+	margin-left: 15%;
+	margin-top: 5%;
+	text-align: justify;
+	margin-top: 9%;
+	margin-bottom: -10%;
+
+}
+
+.le-lorem-ipsum-est-s {
+	width: 92%;
+	height: 70%;
+	font-family: Helvetica;
+	font-size: 80%;
+	font-weight: 300;
+	line-height: 1.2;
+	color: #3e3e3e;
+
+}
+
+.para {
+	position: absolute;
+
+}
+
+.para i {
+	color: red;
+	font-size: 90%;
+}
+
+/* PROFFESIONALS and PARTICULIERS area */
+.pro-area {
+	width: 60%;
+	height: 20%;
+	margin-left: 15%;
+	margin-top: 18%;
+	background-color: #ececec;
+	margin-top: 15%;
+	padding-top: 0;
+}
+
+.rectangle-525-copy {
+	width: 82%;
+	height: 92%;
+	background-color: #ffffff;
+
+}
+
+.rectangle-525-copy img {
+	width: 30%;
+	height: 30%;
+	vertical-align: middle;
+	margin-left: 55%;
+	margin-top: 2%;
+	display: inline;
+}
+
+
+
+.n-o-s-o-f-f-r-e-s {
+	width: 70%;
+	height: 30%;
+	font-family: Helvetica;
+	font-size: 100%;
+	color: #3e3e3e;
+	position: static;
+	padding-top: 10%;
+	
+}
+
+.pro-area i {
+	color: red;
+	font-size: 90%;
+}
+
+
+/* particuliers button area */
+.rectangle-526 {
+	width: 20%;
+	height: 15%;
+	background-color: #c5281c;
+	/*background-color: var(--rusty-red);*/
+	font-family: Helvetica;
+	font-size: 70%;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	padding-bottom: 0;
+	padding-top: 0;
+
+}
+
+/* proffesionals button area */
+
+.rectangle-526-copy {
+	width: 20%;
+	height: 15%;
+	/*opacity: 0.28;*/
+	background-color: #bfbfbf;
+	font-family: Helvetica;
+	font-size: 70%;
+	text-align: center;
+	color: #3e3e3e;
+	padding-top: 0;
+
+}
+
+.rectangle-176 {
+	width: 300px;
+	height: 141px;
+	opacity: 0.89;
+	background-color: #ffffff;
+}
+
+.rectangle-525-copy span { 
+	width: 50%;
+	height: 50%;
+	opacity: 0.89;
+	background-color: #ffffff;
+	margin-top: -27%;
+
+}
+
+.rectangle-525-copy p {
+	width: 50%;
+	height: 50%;
+	font-family: Helvetica;
+	font-size: 90%;
+	font-weight: 300;
+	line-height: 1.3;
+	color: #3e3e3e;
+	margin-top: -27%;
+	
+}
+.rectangle-525-copy h4 {
+	width: 50%;
+	height: 40%;
+	font-family: Helvetica;
+	font-size: 100%;
+	font-weight: bold;
+	color: #c5281c;
+	margin-top: -15%;
+	position: absolute;
+}
+
+/* the footer section */
+
+.footer {
+	width: 49.2%;
+	height: 40%;
+	margin-left: 15%;
+	margin-top: 15%;
+	background-color: #ffffff;
+}
+
+.footer img {
+	width: 50%;
+	height: 50%;
+}
+
+.right-section {
+	width: 100%;
+	height: 50%;
+	display: inline-block;
+
+}
+
+.right-section img {
+	width: 20%;
+	height: 30%;
+	padding-top: 2%;
+	padding-left: 2%;
+}
+
+.middle-section {
+	width: 35%;
+	height: 50%;
+	display: inline-block;
+	margin-left: 40%;
+	margin-bottom: 50%;
+	margin-top: 0;
+	padding-top: 1%;
+	margin-top: 1%;
+
+}
+
+
+/*
+.chat-image {
+	height: 10%;
+	width: 10%;
+	cursor:pointer;
+    border: none;
+    padding-bottom: 7%;
+    display: inline;
+}
+*/
+
+.contactez-lagence-s-footer {
+	width: 60%;
+	height: 10%;
+	font-family: Helvetica;
+	font-size: 80%;
+	font-weight: 500;
+	line-height: 1.1;
+	text-align: center;
+	color: #c5281c;
+	margin-bottom: 5%;
+	padding-bottom: 10%;
+}
+
+.chat-footer{
+	width: 10%;
+	height: 10%;
+	display: inline-block;
+	padding-right: 1%;
+}
+
+.chat-text {
+	margin-left: 1%;
+	display: inline-block;
+}
+
+.phone-footer {
+	display: inline-block;
+	padding-right: 10%;
+	
+}
+
+.mail-image {
+	width: 10%;
+	height: 10%;
+	display: inline-block;
+}
+
+.left-section {
+	width: 35%;
+	height: 50%;
+	display: inline;
+}
+
+.footer form {
+	margin-left: 50%;
+
+}
+
+/* Pop Up Window Style */
+
+.pop-content {
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	background-color: #ADD8E6;
+}
+
+.pop-content h1 {
+
+	text-align: center;
+	color: red;
+}

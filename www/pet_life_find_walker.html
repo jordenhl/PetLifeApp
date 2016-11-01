@@ -1,0 +1,164 @@
+<!-- Yarden Halperin (ID 204540934), Yardem Moalem (ID 302865654), Almog Avivi (ID 308025725) -->
+
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+<link rel="icon" type="image/png" href="images/splash/android-chrome-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" sizes="196x196" href="images/splash/apple-touch-icon-196x196.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/splash/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/splash/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/splash/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/splash/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/splash/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/splash/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/splash/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/splash/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="57x57" href="images/splash/apple-touch-icon-57x57.png">  
+<link rel="icon" type="image/png" href="images/splash/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="images/splash/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/splash/favicon-16x16.png" sizes="16x16">
+<link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" /> 
+    
+<title>Epsilon 4.0</title>
+
+<link href="styles/style.css"           rel="stylesheet" type="text/css">
+<link href="styles/menus.css"           rel="stylesheet" type="text/css">
+<link href="styles/framework.css"       rel="stylesheet" type="text/css">
+<link href="styles/font-awesome.css"    rel="stylesheet" type="text/css">
+<link href="styles/animate.css"         rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jqueryui.js"></script>
+<script type="text/javascript" src="scripts/framework-plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZxJUyYqXtMG6dK7goJoSmF_XWVXt60Q8&libraries=places"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+
+<body class="dual-sidebar"> 
+    
+<div id="preloader">
+	<div id="status">
+        <div class="preloader-logo"></div>
+        <h3 class="center-text">Welcome</h3>
+        <p class="center-text smaller-text">
+            We're loading the content, give us a second. This won't take long!
+        </p>
+    </div>
+</div>
+    
+<div id="header-fixed" class="header-light">
+    <a class="header-icon-two open-header-menu disabled" href="#"><i class="fa fa-angle-down"></i></a>
+    <a class="header-logo" href="#"></a>
+</div> 
+
+<div class="all-elements">
+    <div class="snap-drawers">
+        <div id="content" class="snap-content">
+            <div class="header-clear-large"></div>            
+           <div class="content"> 
+                
+                <div class="container heading-style-5">
+                    <h4 class="heading-title">Find a walker</h4>
+                    <i class="fa fa-paw heading-icon"></i>
+                    <div class="line bg-black"></div>
+                </div> 
+            
+            <form>
+  			<form class="one-half last-column">
+                       
+                       
+               Where?              
+            <input id="locationTextField" type="text" name="from" size="50">
+
+            <script>
+                function init() {
+                    var input = document.getElementById('locationTextField');
+                    var autocomplete = new google.maps.places.Autocomplete(input);
+                }
+
+                google.maps.event.addDomListener(window, 'load', init);
+            </script>
+
+
+                When?
+                Date:
+            <input id="text-label-1" class="text-field green-feild" type="date" ></label>            
+
+                Time:
+            <input id="text-label-2" class="text-field green-feild" type="time" ></label>    
+                
+                My Budget:
+            <input id="text-label-3" class="text-field green feild" type="number"></label>
+
+                Note to Walker:
+            <input id="text-label-4" class="text-field green-feild" type="text" ></label>
+			
+            <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="Go!" onclick="" data-formId="contactForm"/>
+            </form>
+
+            <div class="results" id="results" style="display: none;">
+                <h4 class="heading-title">Result:</h4>
+                <p id="result_name" style="display: block;"></p>
+                <input type="submit" class="login-button button button-xs button-green button-fullscreen full-bottom" id="contactRequest" value="Click here to send request" style="display:block;"/>
+                <p id="afterSendReq" style="display:none;"><b>Your request is pending and will be sent to your dog walker soon. </b></p>
+            </div>
+
+            <a href="pet_life_profile_owner.html" class="login-button button button-xs button-green button-fullscreen full-bottom go-back">Go Back To My Profile</a>
+
+            <script type="text/javascript">
+                        $(document).ready(function(){
+                            $("#contactSubmitButton").on("click",function(e){
+                                jQuery.ajax({
+                                    url: "/findMatch",
+                                    type: "POST",
+                                    async: false,
+                                    contentType: "application/x-www-form-urlencoded",
+                                    data: {
+                                        "place": jQuery("#locationTextField").val(),
+                                        "date": jQuery("#text-label-1").val(),
+                                        "time": jQuery("#text-label-2").val(),
+                                    },
+                                })
+                                //ADD MAIL PLUG IN 
+                                .done(function(data, textStatus, jqXHR) {
+                                    if(data.status == "success"){
+                                        document.getElementById('results').style.display = "block";
+                                        document.getElementById('result_name').innerHTML = "<b>Walker name: </b>" + data.name + "<br><b>Email address for content: </b>" + data.mail;
+                                    } else {
+                                        alert("no match");
+                                    }
+                                })
+                                .fail(function(jqXHR, textStatus, errorThrown) {
+                                    console.log("HTTP Request Failed");
+                                    alert("HTTP Request Failed");
+                                })
+                                .always(function() {
+                                    /* ... */
+                                });
+                            });
+                            
+                        });
+
+                        $(document).ready(function(){
+                            $("#contactRequest").on("click", function(e){
+                                document.getElementById('result_name').style.display = "none";
+                                document.getElementById('contactRequest').style.display = "none";
+                                document.getElementById('afterSendReq').style.display = "block";
+
+                            });
+                        });
+                       </script>
+                
+              </div>  
+        </div>
+    </div>  
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+</div>
+</body>

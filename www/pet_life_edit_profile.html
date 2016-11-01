@@ -1,0 +1,202 @@
+<!-- Yarden Halperin (ID 204540934), Yardem Moalem (ID 302865654), Almog Avivi (ID 308025725) -->
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta charset="UTF-8">
+
+
+<link rel="icon" type="image/png" href="images/splash/android-chrome-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" sizes="196x196" href="images/splash/apple-touch-icon-196x196.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/splash/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/splash/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/splash/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/splash/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/splash/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/splash/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/splash/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/splash/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="57x57" href="images/splash/apple-touch-icon-57x57.png">  
+<link rel="icon" type="image/png" href="images/splash/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="images/splash/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/splash/favicon-16x16.png" sizes="16x16">
+<link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" /> 
+
+    
+<title>Epsilon 4.0</title>
+
+<link href="styles/style.css"           rel="stylesheet" type="text/css">
+<link href="styles/menus.css"           rel="stylesheet" type="text/css">
+<link href="styles/framework.css"       rel="stylesheet" type="text/css">
+<link href="styles/font-awesome.css"    rel="stylesheet" type="text/css">
+<link href="styles/animate.css"         rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jqueryui.js"></script>
+<script type="text/javascript" src="scripts/framework-plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZxJUyYqXtMG6dK7goJoSmF_XWVXt60Q8&libraries=places"></script>
+
+</head>
+
+<body class="dual-sidebar">
+
+    
+<div id="preloader">
+    <div id="status">
+        <div class="preloader-logo"></div>
+        <h3 class="center-text">Welcome</h3>
+        <p class="center-text smaller-text">
+            We're loading the content, give us a second. This won't take long!
+        </p>
+    </div>
+</div>
+    
+<div id="header-fixed" class="header-light">
+    <a class="header-icon-two open-header-menu disabled" href="#"><i class="fa fa-angle-down"></i></a>
+    <a class="header-logo" href="#"></a>
+</div> 
+
+<div class="all-elements">
+    <div class="snap-drawers">
+   
+        <div id="content" class="snap-content">
+            <div class="header-clear-large"></div>
+            
+            <div class="content">
+                <div class="container heading-style-5">
+                    <h4 class="heading-title">Edit Your Profile</h4>
+                    <i class="fa fa-users heading-icon"></i>
+                    <div class="line bg-black"></div>
+                </div> 
+
+                <p><center>Enter new information about yourself:</center></p>
+                
+               <div class="content">                
+                  <div class="page-login full-bottom">
+                
+                    <div class="login-input">
+                        <i class="fa fa-user"></i>
+                        <input type="text" onfocus="if (this.value=='Username') this.value = ''" onblur="if (this.value=='') this.value = 'Username'" id="name" placeholder="Enter Full Name" required>
+                    </div>                    
+                    <div class="login-mail">
+                        <i class="fa fa-envelope-o"></i>
+                        <input onfocus="if (this.value=='E-Mail') this.value = ''" onblur="if (this.value=='') this.value = 'E-Mail'" type="email" value="E-Mail">
+                    </div>                    
+                    <div class="login-date">
+                        <i class="fa fa-birthday-cake"></i>
+                        <input class="set-today" type="date">
+                    </div>
+                    <div class="login-address">
+                        <i class="fa fa-home"></i>
+                        <input type="text" onfocus="if (this.value=='Address') this.value = ''" onblur="if (this.value=='') this.value = 'Address'" value="Address" id="address">
+                        <script>
+                            function init() {
+                                var input = document.getElementById('address');
+                                var autocomplete = new google.maps.places.Autocomplete(input);
+                            }
+                            google.maps.event.addDomListener(window, 'load', init);
+                        </script>
+                    </div>
+                    <div class="login-phone">
+                        <i class="fa fa-phone"></i>
+                        <input onfocus="if (this.value=='Phone') this.value = ''" onblur="if (this.value=='') this.value = 'Phone'" value="Phone">
+                    </div>
+                    <div class="login-password">
+                        <i class="fa fa-lock"></i>
+                        <input onfocus="if (this.value=='password') this.value = ''" onblur="if (this.value=='') this.value = 'password'" id="password" type="password" value="password">
+                    </div>
+                </div>
+                
+                <a href="pet_life_profile_walker.html" class="login-button button button-small button-green button-fullscreen full-bottom" id="walkers">Save as a dog walker</a>
+                <a href="pet_life_profile_owner.html" class="login-button button button-small button-green button-fullscreen full-bottom" id="owner">Save as a dog owner</a>
+
+
+                <a href="pet_life_profile_owner.html" class="login-button button button-xs button-green button-fullscreen full-bottom go-back">Go Back To My Profile</a>
+                
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $("#walkers").on("click", function(){
+                            jQuery.ajax({
+                            url: "/addWalker",
+                            type: "POST",
+                            async: false,
+                            contentType: "application/x-www-form-urlencoded",
+                                data: {
+                                    "name": jQuery("#name").val(),
+                                    "mail": jQuery("#mail").val(),
+                                    "place": jQuery("#address").val(),
+                                },
+                            })
+              
+                            .done(function(walker, textStatus, jqXHR) {
+                                alert(walker.name + " Added successfully to the walkers stock");
+                            })
+                            .fail(function(jqXHR, textStatus, errorThrown) {
+                                console.log("HTTP Request Failed");
+                                alert("HTTP Request Failed");
+                            })
+                            .always(function() {
+                                /* ... */                                
+                            });
+
+                            jQuery.ajax({
+                                url: "/addUsers",
+                                type: "POST",
+                                async: false,
+                                contentType: "application/x-www-form-urlencoded",
+                                data: {
+                                    "username": jQuery("#name").val(),
+                                    "password": jQuery("#password").val(),
+                                 }
+                            })
+                            .done(function(walker, textStatus, jqXHR) {
+                                alert(user.name + " Added successfully to the system");
+                            })
+                            .fail(function(jqXHR, textStatus, errorThrown) {
+                                console.log("HTTP Request Failed");
+                                alert("HTTP Request Failed");
+                            })
+                            .always(function() {
+                                 /* ... */
+                            
+                            });
+                        });
+                    });
+
+                    $(document).ready(function(){ 
+                        $("#owner").on("click", function(){
+                            jQuery.ajax({
+                                url: "/addUsers",                             
+                                type: "POST",
+                                async: false,
+                                contentType: "application/x-www-form-urlencoded",
+                                data: {
+                                    "username": jQuery("#name").val(),
+                                    "password": jQuery("#password").val(),
+                                }
+
+                            })
+                            .done(function(walker, textStatus, jqXHR) {
+                                console.log(user.name + " Added successfully to the system");
+                            })
+                            .fail(function(jqXHR, textStatus, errorThrown) {
+                                console.log("HTTP Request Failed");
+                                alert("HTTP Request Failed");
+                            })
+                            .always(function() {
+                                /* ... */
+                                    
+                            });
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>  
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+</div> 
+</body>
